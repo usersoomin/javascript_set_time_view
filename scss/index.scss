@@ -1,0 +1,105 @@
+@charset 'UTF-8';
+@import 'reset';
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+main {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/bg_morning.jpg);
+
+    header {
+        width: 90vw;
+        position: absolute;
+        top: 5vh;
+        left: 5vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid black;
+
+        h1 {
+            font: bold 30px/1 'Orbitron';
+            color: #fff;
+        }
+        #gnb {
+            display: flex;
+
+            li {
+                margin: 0 40px;
+
+                a {
+                    font: bold 14px/1 'Arial';
+                    color: #fff;
+                }
+            }
+        }
+        #sns {
+            display: flex;
+
+            li {
+                margin: 0 10px;
+
+                i {
+                    font-size: 18px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    article {
+        width: 40vw;
+        position: absolute;
+        top: 50%;
+        left: 5vw;
+        transform: translateY(-50%);
+
+        p {
+            font: 4vw/1 'Orbitron';
+            color: #fff;
+            margin-bottom: 20px;
+
+            strong {
+                opacity: .7;
+            }
+        }
+        em {
+            font: bold 14px/1.2 'Arial';
+            color: #fff;
+            letter-spacing: 2px;
+        }
+    }
+    figure {
+        width: 1200px;
+        height: 800px;
+        position: absolute;
+        right: 10%;
+        top: 30%;
+        background-position: right top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-image: url(../img/bg_morning_hand.png);
+
+        .screen {
+            width: 457px;
+            height: 258px;
+            position: absolute;
+            top: 98px;
+            left: 435px;
+            font: 60px/250px 'Orbitron';
+            color: yellow;
+            text-align: center;
+            overflow: hidden;
+
+            > span {
+                display: inline-block;
+                width: 100px;
+            }
+        }
+    }
+}

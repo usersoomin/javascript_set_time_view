@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(../img/bg_morning.jpg);
+}
+main header {
+  width: 90vw;
+  position: absolute;
+  top: 5vh;
+  left: 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+main header h1 {
+  font: bold 30px/1 "Orbitron";
+  color: #fff;
+}
+main header #gnb {
+  display: flex;
+}
+main header #gnb li {
+  margin: 0 40px;
+}
+main header #gnb li a {
+  font: bold 14px/1 "Arial";
+  color: #fff;
+}
+main header #sns {
+  display: flex;
+}
+main header #sns li {
+  margin: 0 10px;
+}
+main header #sns li i {
+  font-size: 18px;
+  color: #fff;
+}
+main article {
+  width: 40vw;
+  position: absolute;
+  top: 50%;
+  left: 5vw;
+  transform: translateY(-50%);
+}
+main article p {
+  font: 4vw/1 "Orbitron";
+  color: #fff;
+  margin-bottom: 20px;
+}
+main article p strong {
+  opacity: 0.7;
+}
+main article em {
+  font: bold 14px/1.2 "Arial";
+  color: #fff;
+  letter-spacing: 2px;
+}
+main figure {
+  width: 1200px;
+  height: 800px;
+  position: absolute;
+  right: 10%;
+  top: 30%;
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(../img/bg_morning_hand.png);
+}
+main figure .screen {
+  width: 457px;
+  height: 258px;
+  position: absolute;
+  top: 98px;
+  left: 435px;
+  font: 60px/250px "Orbitron";
+  color: yellow;
+  text-align: center;
+  overflow: hidden;
+}
+main figure .screen > span {
+  display: inline-block;
+  width: 100px;
+}
+
+/*# sourceMappingURL=index.css.map */
